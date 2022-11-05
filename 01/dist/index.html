@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+      }
+
+      button {
+        position: relative;
+        z-index: 10;
+
+        width: 30%;
+        height: 40px;
+
+        font-size: 1rem;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="enter-ar">Start AR</button>
+    <canvas id="webxr-canvas"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
