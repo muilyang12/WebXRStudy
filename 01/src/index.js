@@ -11,9 +11,12 @@ const isArSessionSupported = (async function () {
 })();
 
 if (isArSessionSupported) {
-  document.getElementById("enter-ar").addEventListener("click", () => {
+  const button = document.getElementById("enter-ar");
+  button.addEventListener("click", () => {
     arProject = new ARProject();
     arProject.activateXR();
+
+    button.style.display = "none";
   });
 }
 

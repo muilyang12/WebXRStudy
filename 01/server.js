@@ -3,7 +3,6 @@ const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 
 const liveServer = livereload.createServer({
-  // 변경시 다시 로드할 파일 확장자들 설정
   exts: ["html", "css", "js"],
   debug: true,
 });
